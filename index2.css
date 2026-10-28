@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.pricing-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  min-width: 310px;
+}
+
+.select-box {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  gap: 10px;
+}
+
+button.btn {
+  cursor: pointer;
+  width: 105px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button.btn:hover {
+  color: #fff;
+  background-color: rgb(109, 80, 236);
+}
+
+button.btn:first-child {
+  color: #fff;
+  background-color: rgb(109, 80, 236);
+}
+
+span {
+  color: #dbdada;
+}
+
+.box-container {
+  display: flex;
+  gap: 25px;
+}
+
+.pricing-box {
+  width: 380px;
+  height: 500px;
+  padding: 30px;
+}
+
+.include-box {
+  position: relative;
+  margin-top: 25px;
+}
+
+h3.text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  line-height: 35px;
+}
+
+
+p.para {
+  color: #575454ce;
+  font-size: 13.5px;
+  font-weight: 450;
+  letter-spacing: 0.5px;
+}
+
+.second-box > p.para {
+  color: #ccdcf0c9;
+  font-weight: 300;
+}
+
+.pricing-box:nth-child(2) {
+  position: relative;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.popular-box {
+  position: absolute;
+  top: -2.5%;
+  right: 30px;
+  background-color: rgb(23, 168, 137);
+  border-radius: 30px;
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+h4.name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 0.3px;
+  margin-bottom: 3px;
+}
+
+.pricing-box:nth-child(2) > .name:nth-child(2) {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: 0.3px;
+}
+
+h3.price-per-month,
+.price {
+  color: #000;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
+}
+
+.pricing-box:nth-child(2) > h3.price-per-month:nth-child(3),
+.price:nth-child(1) {
+  color: #fff;
+  font-weight: 600;
+}
+
+button.purchase-btn {
+  padding: 0 50px;
+}
+
+span.month {
+  color: #00000080;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+p.detail {
+  color: #000000bd;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.pricing-box:nth-child(2) > .detail:nth-child(4) {
+  color: #ccccccb2;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+button.purchase-btn {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(109, 80, 236);
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+}
+
+button.purchase-btn:hover {
+  background-color: rgb(100, 73, 218);
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: scroll;
+  }
+
+  .pricing-box:nth-child(3) {
+    position: absolute;
+    top: 105%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .box-container {
+    position: absolute;
+    top: 10%;
+    display: block;
+  }
+
+  .pricing-box {
+    width: 310px;
+  }
+
+  p.para {
+    font-size: 12.5px;
+  }
+}
